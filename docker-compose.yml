@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  ubuntu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /code
+    volumes:
+      - ./code:/code
