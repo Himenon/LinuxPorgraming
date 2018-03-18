@@ -8,3 +8,8 @@ docker-compose build
 docker-compose run ubuntu bash
 ```
 
+## How to compile
+
+```
+gcc -o hello hello.c
+```
