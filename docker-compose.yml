@@ -8,3 +8,6 @@ services:
     working_dir: /code
     volumes:
       - ./code:/code
+    # https://docs.docker.com/compose/compose-file/compose-file-v2/#security_opt
+    security_opt:
+      - seccomp:unconfined
