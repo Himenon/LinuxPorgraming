@@ -1,8 +1,9 @@
 FROM ubuntu:xenial-20171114
 
-RUN apt -y update
-RUN apt install -y \
+RUN apt-get -y update
+RUN apt-get install -y \
     build-essential \
-    strace
+    strace \
+    gdb
 
 RUN gcc -dumpversion
